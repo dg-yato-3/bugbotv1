@@ -43,3 +43,13 @@ let _owner = JSON.parse(fs.readFileSync('./database/owner.json'))
 let owner = JSON.parse(fs.readFileSync('./database/owner.json'))
 let _afk = JSON.parse(fs.readFileSync('./database/afk-user.json'))
 let hit = JSON.parse(fs.readFileSync('./database/total-hit-user.json'))
+
+
+//autorep
+const VoiceNoteXeon = JSON.parse(fs.readFileSync('./database/autoreply/vn.json'))
+const StickerXeon = JSON.parse(fs.readFileSync('./database/autoreply/sticker.json'))
+const ImageXeon = JSON.parse(fs.readFileSync('./database/autoreply/image.json'))
+const VideoXeon = JSON.parse(fs.readFileSync('./database/autoreply/video.json'))
+const DocXeon = JSON.parse(fs.readFileSync('./database/autoreply/doc.json'))
+const ZipXeon = JSON.parse(fs.readFileSync('./database/autoreply/zip.json'))
+const ApkXeon = JSON.parse(fs.readFileSync('./database/autoreply/apk.json'))
