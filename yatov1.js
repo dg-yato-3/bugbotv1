@@ -53,3 +53,36 @@ const VideoXeon = JSON.parse(fs.readFileSync('./database/autoreply/video.json'))
 const DocXeon = JSON.parse(fs.readFileSync('./database/autoreply/doc.json'))
 const ZipXeon = JSON.parse(fs.readFileSync('./database/autoreply/zip.json'))
 const ApkXeon = JSON.parse(fs.readFileSync('./database/autoreply/apk.json'))
+
+//time
+const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
+        const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+        const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss')  
+         if(time2 < "23:59:00"){
+var xeonytimewisher = `Good Night ðŸŒŒ`
+ }
+ if(time2 < "19:00:00"){
+var xeonytimewisher = `Good Evening 🦄`
+ }
+ if(time2 < "18:00:00"){
+var xeonytimewisher = `Good Evening 🦄`
+ }
+ if(time2 < "15:00:00"){
+var xeonytimewisher = `Good Afternoon 🦄`
+ }
+ if(time2 < "11:00:00"){
+var xeonytimewisher = `Good Morning 🦄`
+ }
+ if(time2 < "05:00:00"){
+var xeonytimewisher = `Good Morning 🦄`
+ } 
+module.exports = YatoBotInc = async (YatoBotInc, m, msg, chatUpdate, store) => {
+    try {
+        const {
+            type,
+            quotedMsg,
+            mentioned,
+            now,
+            fromMe
+        } = m
+        var body = (m.mtype === 'conversation') ? m.message.conversation : (m.mtype == 'imageMessage') ? m.message.imageMessage.caption : (m.mtype == 'videoMessage') ? m.message.videoMessage.caption : (m.mtype == 'extendedTextMessage') ? m.message.extendedTextMessage.text : (m.mtype == 'buttonsResponseMessage') ? m.message.buttonsResponseMessage.selectedButtonId : (m.mtype == 'listResponseMessage') ? m.message.listResponseMessage.singleSelectreplygcxeon.selectedRowId : (m.mtype == 'templateButtonreplygcxeonMessage') ? m.message.templateButtonreplygcxeonMessage.selectedId : (m.mtype === 'messageContextInfo') ? (m.message.buttonsResponseMessage?.selectedButtonId || m.message.listResponseMessage?.singleSelectreplygcxeon.selectedRowId || m.text) : ''
