@@ -21,7 +21,7 @@ global.themeemoji = '🪀'
 global.wm = "Yato Bot Inc."
 
 //theme link
-global.link = 'https://whatsapp.com/channel/0029VaG9VfPKWEKk1rxTQD20'
+global.link = 'https://whatsapp.com/channel/0029Vakwo3oDp2Q4Y02XDS2b'
 
 //custom prefix
 global.prefa = ['','!','.','#','&']
