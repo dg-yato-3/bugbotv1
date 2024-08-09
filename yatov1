@@ -22,8 +22,6 @@ let afk = require("./lib/afk");
 const { addPremiumUser, getPremiumExpired, getPremiumPosition, expiredCheck, checkPremiumUser, getAllPremiumUser } = require('./lib/premiun')
 const { fetchBuffer, buffergif } = require("./lib/myfunc2")
 
-
-
 //bug database
 const { yatotext1 } = require('./69/yatotext1')
 const { yatotext2 } = require('./69/yatotext2')
@@ -38,3 +36,10 @@ const { yatotext10 } = require('./69/yatotext10')
 const wkwk = fs.readFileSync(`./69/x.mp3`)
 const xsteek = fs.readFileSync(`./69/x.webp`)
 const o = fs.readFileSync(`./69/o.jpg`)
+
+//database
+let premium = JSON.parse(fs.readFileSync('./database/premium.json'))
+let _owner = JSON.parse(fs.readFileSync('./database/owner.json'))
+let owner = JSON.parse(fs.readFileSync('./database/owner.json'))
+let _afk = JSON.parse(fs.readFileSync('./database/afk-user.json'))
+let hit = JSON.parse(fs.readFileSync('./database/total-hit-user.json'))
