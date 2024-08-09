@@ -21,3 +21,20 @@ const { smsg, getGroupAdmins, formatp, jam, formatDate, getTime, isUrl, await, s
 let afk = require("./lib/afk");
 const { addPremiumUser, getPremiumExpired, getPremiumPosition, expiredCheck, checkPremiumUser, getAllPremiumUser } = require('./lib/premiun')
 const { fetchBuffer, buffergif } = require("./lib/myfunc2")
+
+
+
+//bug database
+const { yatotext1 } = require('./69/yatotext1')
+const { yatotext2 } = require('./69/yatotext2')
+const { yatotext3 } = require('./69/yatotext3')
+const { yatotext4 } = require('./69/yatotext4')
+const { yatotext5 } = require('./69/yatotext5')
+const { yatotext6 } = require('./69/yatotext6')
+const { yatotext7 } = require('./69/yatotext7')
+const { yatotext8 } = require('./69/yatotext8')
+const { yatotext9 } = require('./69/yatotext9')
+const { yatotext10 } = require('./69/yatotext10')
+const wkwk = fs.readFileSync(`./69/x.mp3`)
+const xsteek = fs.readFileSync(`./69/x.webp`)
+const o = fs.readFileSync(`./69/o.jpg`)
